@@ -13,4 +13,9 @@
     <string name="mash">MASH</string>
     <string name="rythm">RYTHM</string>
     <string name="zero">0</string>
+    <string name="Rythm_scoreJ1">Score J1</string>
+    <string name="Rythm_scoreJ2">Score J2</string>
+    <string name="Rythm_tempsJ1">Temps J1</string>
+    <string name="Rythm_tempsJ2">Temps J2</string>
+
 </resources>

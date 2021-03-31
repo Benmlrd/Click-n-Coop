@@ -16,6 +16,7 @@
         android:layout_marginBottom="200dp"
         android:text="@string/rythm"
         app:backgroundTint="#018BA5"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -32,6 +33,7 @@
         android:layout_marginBottom="200dp"
         android:text="@string/mash"
         app:backgroundTint="#018BA5"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/b_rythm"
         app:layout_constraintHorizontal_bias="0.5"
@@ -51,4 +53,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

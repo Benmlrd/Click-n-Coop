@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-public class MenuPrincipal extends Fragment {
+public class Rythm extends Fragment {
 
     @Override
     public View onCreateView(
@@ -18,7 +18,6 @@ public class MenuPrincipal extends Fragment {
     ) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.menu_principal, container, false);
-        //modif
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -27,9 +26,8 @@ public class MenuPrincipal extends Fragment {
         view.findViewById(R.id.b_mash).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MenuPrincipal.this)
-
-                        .navigate(R.id.action_FirstFragment_to_Match);
+                NavHostFragment.findNavController(Rythm.this)
+                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });
     }
