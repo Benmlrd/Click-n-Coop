@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Clickandcoop</string>
+    <string name="app_name">Click\'n Coop</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -12,8 +12,10 @@
     <string name="choisirUnModeDeJeu">Choisir un mode de jeu</string>
     <string name="mash">MASH</string>
     <string name="rythm">RYTHM</string>
+    <string name="zero">0</string>
     <string name="Rythm_scoreJ1">Score J1</string>
     <string name="Rythm_scoreJ2">Score J2</string>
     <string name="Rythm_tempsJ1">Temps J1</string>
     <string name="Rythm_tempsJ2">Temps J2</string>
+
 </resources>

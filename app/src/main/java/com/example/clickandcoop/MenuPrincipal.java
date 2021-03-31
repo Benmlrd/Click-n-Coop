@@ -18,6 +18,7 @@ public class MenuPrincipal extends Fragment {
     ) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.menu_principal, container, false);
+        //modif
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -27,7 +28,8 @@ public class MenuPrincipal extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(MenuPrincipal.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+
+                        .navigate(R.id.action_FirstFragment_to_Match);
             }
         });
     }
