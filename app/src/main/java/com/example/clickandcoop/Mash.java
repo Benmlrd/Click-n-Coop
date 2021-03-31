@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-public class Match extends Fragment {
+public class Mash extends Fragment {
 
     @Override
     public View onCreateView(
@@ -17,7 +17,7 @@ public class Match extends Fragment {
             Bundle savedInstanceState
     ) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.match, container, false);
+        return inflater.inflate(R.layout.mash, container, false);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class Match extends Fragment {
         view.findViewById(R.id.b_joueur1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(Match.this)
+                NavHostFragment.findNavController(Mash.this)
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });

@@ -12,14 +12,14 @@
         tools:layout="@layout/menu_principal">
 
         <action
-            android:id="@+id/action_FirstFragment_to_Match"
-            app:destination="@id/Match" />
+            android:id="@+id/action_FirstFragment_to_Mash"
+            app:destination="@id/Mash" />
     </fragment>
     <fragment
-        android:id="@+id/Match"
-        android:name="com.example.clickandcoop.Match"
+        android:id="@+id/Mash"
+        android:name="com.example.clickandcoop.Mash"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/mash">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
