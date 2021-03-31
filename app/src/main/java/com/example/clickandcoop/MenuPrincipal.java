@@ -29,7 +29,7 @@ public class MenuPrincipal extends Fragment {
             public void onClick(View view) {
                 NavHostFragment.findNavController(MenuPrincipal.this)
 
-                        .navigate(R.id.action_FirstFragment_to_Match);
+                        .navigate(R.id.action_FirstFragment_to_Mash);
             }
         });
     }

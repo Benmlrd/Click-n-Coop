@@ -27,7 +27,7 @@ public class Rythm extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(Rythm.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.action_FirstFragment_to_Mash);
             }
         });
     }
