@@ -12,4 +12,8 @@
     <string name="choisirUnModeDeJeu">Choisir un mode de jeu</string>
     <string name="mash">MASH</string>
     <string name="rythm">RYTHM</string>
+    <string name="Rythm_scoreJ1">Score J1</string>
+    <string name="Rythm_scoreJ2">Score J2</string>
+    <string name="Rythm_tempsJ1">Temps J1</string>
+    <string name="Rythm_tempsJ2">Temps J2</string>
 </resources>
