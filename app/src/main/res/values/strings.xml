@@ -18,5 +18,7 @@
     <string name="Rythm_tempsJ1">00:10:00</string>
     <string name="Rythm_tempsJ2">00:10:00</string>
     <string name="third_fragment_label">Third Fragment</string>
+    <string name="fourth_fragment_label">fourth_fragment_label</string>
+    <string name="tv_resultat">Voilà le résultat !</string>
 
 </resources>

@@ -30,5 +30,12 @@ public class Mash extends Fragment {
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });
+        view.findViewById(R.id.b_joueur2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(Mash.this)
+                        .navigate(R.id.action_Mash_to_PageScore);
+            }
+        });
     }
 }

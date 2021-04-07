@@ -3,12 +3,10 @@ package com.example.clickandcoop;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.SystemClock;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Chronometer;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -69,7 +67,8 @@ public class Rythm extends Fragment {
 
             @Override
             public void onTick(long millisUntilFinished) {
-                String format = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished)%60, TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished)%60, TimeUnit.MILLISECONDS.toMillis(millisUntilFinished)%60);
+                String format = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished)%60,
+                        TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished)%60, TimeUnit.MILLISECONDS.toMillis(millisUntilFinished)%60);
                 tempsJ1.setText(format);
                 tempsJ2.setText(format);
             }
@@ -84,6 +83,8 @@ public class Rythm extends Fragment {
                 troisiemeBoutton.setBackgroundColor(Color.rgb(7, 117, 166));
                 quatriemeButton.setBackgroundColor(Color.rgb(7, 117, 166));
                 estFini = true;
+                NavHostFragment.findNavController(Rythm.this)
+                        .navigate(R.id.action_Rythm_to_PageScore);
             }
         };
 
