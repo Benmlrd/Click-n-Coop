@@ -32,5 +32,14 @@ public class MenuPrincipal extends Fragment {
                         .navigate(R.id.action_FirstFragment_to_Mash);
             }
         });
+
+        view.findViewById(R.id.b_rythm).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(MenuPrincipal.this)
+
+                        .navigate(R.id.action_FirstFragment_to_Rythm);
+            }
+        });
     }
 }

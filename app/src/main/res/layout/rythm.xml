@@ -6,26 +6,15 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/b1_cliqueJ1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:backgroundTint="@color/BleuMarine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/b2_cliqueJ2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_scoreJ1" />
-
-    <Button
         android:id="@+id/b2_cliqueJ1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:backgroundTint="@color/BleuMarine"
-        app:layout_constraintBottom_toTopOf="@+id/tv_scoreJ2"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b1_cliqueJ1"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/b1_cliqueJ2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_scoreJ1" />
 
     <Button
         android:id="@+id/b1_cliqueJ2"
@@ -33,9 +22,9 @@
         android:layout_height="wrap_content"
         app:backgroundTint="@color/BleuMarine"
         app:layout_constraintBottom_toTopOf="@+id/tv_scoreJ2"
-        app:layout_constraintEnd_toStartOf="@+id/b2_cliqueJ1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b2_cliqueJ2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -43,31 +32,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:backgroundTint="@color/BleuMarine"
+        app:layout_constraintBottom_toTopOf="@+id/tv_scoreJ2"
+        app:layout_constraintEnd_toStartOf="@+id/b1_cliqueJ2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b1_cliqueJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/b1_cliqueJ1"
+        app:layout_constraintStart_toEndOf="@+id/b2_cliqueJ1"
         app:layout_constraintTop_toBottomOf="@+id/tv_scoreJ1" />
 
     <TextView
         android:id="@+id/tv_scoreJ2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:rotation="180"
         android:text="@string/Rythm_scoreJ2"
-        android:textSize="30sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_tempsJ2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b2_cliqueJ1" />
+        app:layout_constraintTop_toBottomOf="@+id/b1_cliqueJ2" />
 
     <TextView
         android:id="@+id/tv_scoreJ1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Rythm_scoreJ1"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/b1_cliqueJ1"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/b2_cliqueJ1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         android:text="@string/Rythm_tempsJ1"
-        android:textSize="24sp"
+        android:textSize="44sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_scoreJ1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -91,8 +92,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:digits="3"
+        android:rotation="180"
         android:text="@string/Rythm_tempsJ2"
-        android:textSize="24sp"
+        android:textSize="44sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_tempsJ1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
