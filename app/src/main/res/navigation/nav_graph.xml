@@ -14,12 +14,25 @@
         <action
             android:id="@+id/action_FirstFragment_to_Mash"
             app:destination="@id/Mash" />
+        <action
+            android:id="@+id/action_FirstFragment_to_Rythm"
+            app:destination="@id/Rythm" />
     </fragment>
     <fragment
         android:id="@+id/Mash"
         android:name="com.example.clickandcoop.Mash"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/mash">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Rythm"
+        android:name="com.example.clickandcoop.Rythm"
+        android:label="@string/third_fragment_label"
+        tools:layout="@layout/rythm">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
