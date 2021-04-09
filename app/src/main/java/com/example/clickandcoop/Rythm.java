@@ -68,7 +68,8 @@ public class Rythm extends Fragment {
             @Override
             public void onTick(long millisUntilFinished) {
                 String format = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished)%60,
-                        TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished)%60, TimeUnit.MILLISECONDS.toMillis(millisUntilFinished)%60);
+                        TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished)%60,
+                        TimeUnit.MILLISECONDS.toMillis(millisUntilFinished)%60);
                 tempsJ1.setText(format);
                 tempsJ2.setText(format);
             }
