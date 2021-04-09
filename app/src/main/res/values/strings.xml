@@ -9,7 +9,6 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="choisirUnModeDeJeu">Choisir un mode de jeu</string>
     <string name="mash">MASH</string>
     <string name="rythm">RYTHM</string>
     <string name="zero">0</string>
@@ -18,5 +17,10 @@
     <string name="Rythm_tempsJ1">00:10:00</string>
     <string name="Rythm_tempsJ2">00:10:00</string>
     <string name="third_fragment_label">Third Fragment</string>
+    <string name="fourth_fragment_label">fourth_fragment_label</string>
+    <string name="tv_resultat">Voilà le résultat !</string>
+    <string name="b_rejouer">REJOUER</string>
+    <string name="b_menu">MENU</string>
+    <string name="tv_modeDeJeu">Choisissez un mode de jeu</string>
 
 </resources>

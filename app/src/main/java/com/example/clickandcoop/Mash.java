@@ -65,7 +65,9 @@ public class Mash extends Fragment {
 
             @Override
             public void onTick(long millisUntilFinished) {
-                String format = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished)%60, TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished)%60, TimeUnit.MILLISECONDS.toMillis(millisUntilFinished)%60);
+                String format = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished)%60,
+                        TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished)%60,
+                        TimeUnit.MILLISECONDS.toMillis(millisUntilFinished)%60);
                 tempsJoueur1.setText(format);
                 tempsJoueur2.setText(format);
             }
@@ -75,8 +77,8 @@ public class Mash extends Fragment {
                 countDownTimer.cancel();
                 tempsJoueur1.setText("00:00:00");
                 tempsJoueur2.setText("00:00:00");
-                 NavHostFragment.findNavController(Mash.this)
-                       .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                NavHostFragment.findNavController(Mash.this)
+                        .navigate(R.id.action_Mash_to_PageScore);
             }
         };
 
@@ -94,8 +96,8 @@ public class Mash extends Fragment {
                     }
                     compteur_j1++;
                     scoreJoueur1.setText(String.valueOf(compteur_j1));
-                    }
                 }
+            }
         });
 
         bouton_joueur2.setOnClickListener(new View.OnClickListener() {
