@@ -29,8 +29,7 @@ public class PageScore extends Fragment {
             public void onClick(View view) {
                 NavHostFragment.findNavController(PageScore.this)
 
-                        .navigate(R.id.action_PageScore_to_Mash, null, new NavOptions.Builder()
-                                .setPopUpTo(R.id.PageScore, true).build());
+                        .navigate(R.id.action_PageScore_to_Mash);
             }
         });
 
@@ -39,8 +38,7 @@ public class PageScore extends Fragment {
             public void onClick(View view) {
                 NavHostFragment.findNavController(PageScore.this)
 
-                        .navigate(R.id.action_PageScore_to_Rythm, null, new NavOptions.Builder()
-                                .setPopUpTo(R.id.PageScore, true).build());
+                        .navigate(R.id.action_PageScore_to_Rythm);
             }
         });
 
