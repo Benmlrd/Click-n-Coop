@@ -6,21 +6,91 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tv_resultat"
+        android:id="@+id/tv_score1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="165dp"
-        android:layout_marginLeft="165dp"
-        android:layout_marginTop="356dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginRight="142dp"
-        android:layout_marginBottom="356dp"
-        android:background="#9A1010"
-        android:text="@string/tv_resultat"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/zero"
+        android:textColor="@color/Or"
+        android:textSize="54sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_score2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/zero"
+        android:textColor="@color/Argent"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_score3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score1" />
+
+    <TextView
+        android:id="@+id/tv_score3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/zero"
+        android:textColor="@color/Bronze"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_scoreActuel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score2" />
+
+    <TextView
+        android:id="@+id/tv_scoreActuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="200dp"
+        android:text="@string/zero"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score3" />
+
+    <Button
+        android:id="@+id/b_rejouer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/b_rejouer"
+        app:backgroundTint="@color/BleuMarine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_scoreActuel" />
+
+    <Button
+        android:id="@+id/b_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/b_menu"
+        app:backgroundTint="@color/BleuMarine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b_rejouer"
+        app:layout_constraintTop_toBottomOf="@+id/tv_scoreActuel" />
 </androidx.constraintlayout.widget.ConstraintLayout>

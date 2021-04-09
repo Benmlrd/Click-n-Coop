@@ -46,7 +46,7 @@
     </fragment>
     <fragment
         android:id="@+id/PageScore"
-        android:name="com.example.clickandcoop.Page_score"
+        android:name="com.example.clickandcoop.PageScore"
         android:label="@string/fourth_fragment_label"
         tools:layout="@layout/page_score">
 
@@ -56,5 +56,8 @@
         <action
             android:id="@+id/action_PageScore_to_Rythm"
             app:destination="@id/Rythm" />
+        <action
+            android:id="@+id/action_PageScore_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
