@@ -26,7 +26,9 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/FirstFragment"
+            app:popUpTo="@+id/FirstFragment"
+            app:popUpToInclusive="false" />
         <action
             android:id="@+id/action_Mash_to_PageScore"
             app:destination="@id/PageScore" />
@@ -39,7 +41,9 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/FirstFragment"
+            app:popUpTo="@+id/FirstFragment"
+            app:popUpToInclusive="false" />
         <action
             android:id="@+id/action_Rythm_to_PageScore"
             app:destination="@id/PageScore" />
@@ -52,12 +56,16 @@
 
         <action
             android:id="@+id/action_PageScore_to_Mash"
-            app:destination="@id/Mash" />
+            app:popUpTo="@+id/PageScore"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_PageScore_to_Rythm"
-            app:destination="@id/Rythm" />
+            app:popUpTo="@+id/PageScore"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_PageScore_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/FirstFragment"
+            app:popUpTo="@+id/FirstFragment"
+            app:popUpToInclusive="false" />
     </fragment>
 </navigation>
