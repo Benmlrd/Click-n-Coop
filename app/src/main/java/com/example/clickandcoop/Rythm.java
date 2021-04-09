@@ -112,16 +112,18 @@ public class Rythm extends Fragment {
         deuxiemeBoutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (verifChaine == 1 && !estFini) {
-                    verifChaine++;
-                    compteur++;
-                    deuxiemeBoutton.setBackgroundColor(Color.rgb(7, 117, 166));
-                    troisiemeBoutton.setBackgroundColor(Color.rgb(98, 0, 238));
-                    scoreJ1.setText(String.valueOf(compteur));
-                    scoreJ2.setText(String.valueOf(compteur));
-                }
-                else {
-                    reInitialiserJeu();
+                if (estCommence) {
+                    if (verifChaine == 1 && !estFini) {
+                        verifChaine++;
+                        compteur++;
+                        deuxiemeBoutton.setBackgroundColor(Color.rgb(7, 117, 166));
+                        troisiemeBoutton.setBackgroundColor(Color.rgb(98, 0, 238));
+                        scoreJ1.setText(String.valueOf(compteur));
+                        scoreJ2.setText(String.valueOf(compteur));
+                    }
+                    else {
+                        reInitialiserJeu();
+                    }
                 }
             }
         });
@@ -129,16 +131,18 @@ public class Rythm extends Fragment {
         troisiemeBoutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (verifChaine == 2 && !estFini) {
-                    verifChaine++;
-                    compteur++;
-                    troisiemeBoutton.setBackgroundColor(Color.rgb(7, 117, 166));
-                    quatriemeButton.setBackgroundColor(Color.rgb(98, 0, 238));
-                    scoreJ1.setText(String.valueOf(compteur));
-                    scoreJ2.setText(String.valueOf(compteur));
-                }
-                else {
-                    reInitialiserJeu();
+                if (estCommence) {
+                    if (verifChaine == 2 && !estFini) {
+                        verifChaine++;
+                        compteur++;
+                        troisiemeBoutton.setBackgroundColor(Color.rgb(7, 117, 166));
+                        quatriemeButton.setBackgroundColor(Color.rgb(98, 0, 238));
+                        scoreJ1.setText(String.valueOf(compteur));
+                        scoreJ2.setText(String.valueOf(compteur));
+                    }
+                    else {
+                        reInitialiserJeu();
+                    }
                 }
             }
         });
@@ -146,17 +150,18 @@ public class Rythm extends Fragment {
         quatriemeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (verifChaine == 3 && !estFini) {
-                    verifChaine++;
-                    compteur++;
-                    quatriemeButton.setBackgroundColor(Color.rgb(7, 117, 166));
-                    premierBoutton.setBackgroundColor(Color.rgb(98, 0, 238));
-                    scoreJ1.setText(String.valueOf(compteur));
-                    scoreJ2.setText(String.valueOf(compteur));
-                    verifChaine = 0;
-                }
-                else {
-                    reInitialiserJeu();
+                if (estCommence) {
+                    if (verifChaine == 3 && !estFini) {
+                        verifChaine++;
+                        compteur++;
+                        quatriemeButton.setBackgroundColor(Color.rgb(7, 117, 166));
+                        premierBoutton.setBackgroundColor(Color.rgb(98, 0, 238));
+                        scoreJ1.setText(String.valueOf(compteur));
+                        scoreJ2.setText(String.valueOf(compteur));
+                        verifChaine = 0;
+                    } else {
+                        reInitialiserJeu();
+                    }
                 }
             }
         });
