@@ -42,8 +42,8 @@
 
     <TextView
         android:id="@+id/s_joueur1"
-        android:layout_width="18dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="10dp"
@@ -60,8 +60,8 @@
 
     <TextView
         android:id="@+id/s_joueur2"
-        android:layout_width="18dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="25dp"
@@ -77,15 +77,15 @@
 
     <TextView
         android:id="@+id/st_joueur1"
-        android:layout_width="18dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="150dp"
         android:layout_marginRight="150dp"
         android:rotation="-180"
-        android:text="@string/zero"
+        android:text="@string/Rythm_tempsJ2"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/st_joueur2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,14 +95,14 @@
 
     <TextView
         android:id="@+id/st_joueur2"
-        android:layout_width="18dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
         android:layout_marginEnd="150dp"
         android:layout_marginRight="150dp"
         android:layout_marginBottom="10dp"
-        android:text="@string/zero"
+        android:text="@string/Rythm_tempsJ2"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/s_joueur2"
         app:layout_constraintEnd_toEndOf="parent"
