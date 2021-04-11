@@ -51,7 +51,6 @@
         android:layout_marginRight="134dp"
         android:text="@string/tv_modeDeJeu"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/b_rythm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

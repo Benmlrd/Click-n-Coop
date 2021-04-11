@@ -77,8 +77,12 @@ public class Mash extends Fragment {
                 countDownTimer.cancel();
                 tempsJoueur1.setText("00:00:00");
                 tempsJoueur2.setText("00:00:00");
+                Bundle bundle = new Bundle();
+                bundle.putString("source", "Mash.java");
+                bundle.putString("score", String.valueOf(Integer.parseInt(scoreJoueur1.getText().toString())
+                        + Integer.parseInt(scoreJoueur2.getText().toString())));
                 NavHostFragment.findNavController(Mash.this)
-                        .navigate(R.id.action_Mash_to_PageScore);
+                        .navigate(R.id.action_Mash_to_PageScore, bundle);
             }
         };
 

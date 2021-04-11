@@ -22,5 +22,8 @@
     <string name="b_rejouer">REJOUER</string>
     <string name="b_menu">MENU</string>
     <string name="tv_modeDeJeu">Choisissez un mode de jeu</string>
+    <string name="premier">1. 0</string>
+    <string name="deuxieme">2. 0</string>
+    <string name="troisieme">3. 0</string>
 
 </resources>

@@ -84,8 +84,11 @@ public class Rythm extends Fragment {
                 troisiemeBoutton.setBackgroundColor(Color.rgb(7, 117, 166));
                 quatriemeButton.setBackgroundColor(Color.rgb(7, 117, 166));
                 estFini = true;
+                Bundle bundle = new Bundle();
+                bundle.putString("source", "Rythm.java");
+                bundle.putString("score", scoreJ1.getText().toString());
                 NavHostFragment.findNavController(Rythm.this)
-                        .navigate(R.id.action_Rythm_to_PageScore);
+                        .navigate(R.id.action_Rythm_to_PageScore, bundle);
             }
         };
 
@@ -168,7 +171,6 @@ public class Rythm extends Fragment {
         });
     }
 
-
     public void reInitialiserJeu() {
         verifChaine = 0;
         compteur = 0;
@@ -176,8 +178,6 @@ public class Rythm extends Fragment {
         deuxiemeBoutton.setBackgroundColor(Color.rgb(7, 117, 166));
         troisiemeBoutton.setBackgroundColor(Color.rgb(7, 117, 166));
         quatriemeButton.setBackgroundColor(Color.rgb(7, 117, 166));
-        scoreJ1.setText(String.valueOf(compteur));
-        scoreJ2.setText(String.valueOf(compteur));
         countDownTimer.onFinish();
     }
 }
